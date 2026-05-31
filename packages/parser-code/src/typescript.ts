@@ -170,8 +170,20 @@ function extractLangChainTool(
   };
 }
 
+function getNodeDecorators(node: ts.Node): readonly ts.Decorator[] {
+  if (ts.canHaveDecorators(node)) {
+    return ts.getDecorators(node) ?? [];
+  }
+
+  if (ts.isFunctionDeclaration(node) && node.modifiers) {
+    return node.modifiers.filter(ts.isDecorator);
+  }
+
+  return [];
+}
+
 function hasToolDecorator(node: ts.FunctionDeclaration): boolean {
-  return (ts.getDecorators(node) ?? []).some((decorator) => {
+  return getNodeDecorators(node).some((decorator) => {
     const expr = decorator.expression;
     if (ts.isCallExpression(expr)) {
       return getCalleeName(expr) === "tool";
