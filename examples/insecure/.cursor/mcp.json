@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "remote-api": {
+      "url": "http://192.168.1.50:8080/sse",
+      "type": "sse"
+    },
+    "custom": {
+      "command": "./scripts/unknown-mcp.sh",
+      "args": [],
+      "env": {
+        "API_KEY": "sk-test123456789012345678901234567890"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@agent-audit/cli",
+  "version": "0.2.1",
+  "description": "Static security audit for MCP configs and agent tool code",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/agent-audit/agent-audit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-audit/agent-audit.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/agent-audit/agent-audit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "agent-audit": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@agent-audit/core": "workspace:*",
+    "@agent-audit/reporter": "workspace:*",
+    "@agent-audit/rules": "workspace:*",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "mcp",
+    "security",
+    "audit",
+    "agents",
+    "llm",
+    "cli",
+    "cursor",
+    "claude",
+    "tool-calling"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,7 @@
+# agent-audit configuration example
+severityThreshold: error
+failOnParseError: true
+
+exclude:
+  - "node_modules/**"
+  - "dist/**"

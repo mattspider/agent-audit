@@ -1,0 +1,39 @@
+{
+  "name": "@agent-audit/core",
+  "version": "0.2.0",
+  "description": "Core scanner and rule engine for agent-audit",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@agent-audit/parser-code": "workspace:*",
+    "@agent-audit/parser-mcp": "workspace:*",
+    "globby": "^14.0.2",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@agent-audit/rules": "workspace:*",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "keywords": ["mcp", "security", "audit", "agent-audit"],
+  "engines": {
+    "node": ">=20"
+  }
+}
