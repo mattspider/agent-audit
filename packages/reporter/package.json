@@ -4,6 +4,15 @@
   "description": "Output formatters for agent-audit",
   "type": "module",
   "license": "MIT",
+  "homepage": "https://github.com/mattspider/agent-audit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattspider/agent-audit.git",
+    "directory": "packages/reporter"
+  },
+  "bugs": {
+    "url": "https://github.com/mattspider/agent-audit/issues"
+  },
   "publishConfig": {
     "access": "public"
   },

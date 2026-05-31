@@ -75,8 +75,9 @@ Requires **Node.js 20+**.
 
 ## Links
 
-- [Full documentation on GitHub](https://github.com/mattspider/agent-audit#readme)
-- [Report issues](https://github.com/mattspider/agent-audit/issues)
+- **Documentation:** https://github.com/mattspider/agent-audit#readme
+- **Issues:** https://github.com/mattspider/agent-audit/issues
+- **Repository:** https://github.com/mattspider/agent-audit
 
 ## License
 

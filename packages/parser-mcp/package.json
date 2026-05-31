@@ -4,6 +4,15 @@
   "description": "MCP configuration parser for agent-audit",
   "type": "module",
   "license": "MIT",
+  "homepage": "https://github.com/mattspider/agent-audit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattspider/agent-audit.git",
+    "directory": "packages/parser-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/mattspider/agent-audit/issues"
+  },
   "publishConfig": {
     "access": "public"
   },

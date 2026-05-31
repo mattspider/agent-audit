@@ -1,6 +1,6 @@
 {
   "name": "@agent-audit/cli",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Static security audit for MCP configs and agent tool code",
   "type": "module",
   "license": "MIT",
