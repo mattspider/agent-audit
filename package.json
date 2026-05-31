@@ -4,7 +4,7 @@
   "version": "0.2.1",
   "description": "Static security audit for MCP configs and agent tool code",
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm --filter \"@agent-audit/cli...\" --workspace-concurrency 1 build",
     "typecheck": "pnpm -r typecheck",
     "test": "vitest run",
     "test:watch": "vitest",
