@@ -194,7 +194,7 @@ rules:
 ## Development
 
 ```bash
-git clone https://github.com/agent-audit/agent-audit.git
+git clone https://github.com/mattspider/agent-audit.git
 cd agent-audit
 pnpm install
 pnpm build

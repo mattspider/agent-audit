@@ -4,14 +4,14 @@
   "description": "Static security audit for MCP configs and agent tool code",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/agent-audit/agent-audit#readme",
+  "homepage": "https://github.com/mattspider/agent-audit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agent-audit/agent-audit.git",
+    "url": "git+https://github.com/mattspider/agent-audit.git",
     "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/agent-audit/agent-audit/issues"
+    "url": "https://github.com/mattspider/agent-audit/issues"
   },
   "publishConfig": {
     "access": "public"

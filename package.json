@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agent-audit/agent-audit.git"
+    "url": "git+https://github.com/mattspider/agent-audit.git"
   },
   "keywords": ["mcp", "security", "audit", "agents", "llm"],
   "license": "MIT",
