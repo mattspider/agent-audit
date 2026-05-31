@@ -29,12 +29,3 @@ Auditoria estática de configs MCP (Model Context Protocol) para detectar miscon
 | [09-ci.md](./09-ci.md) | GitHub Actions e integração CI |
 | [10-testing.md](./10-testing.md) | Estratégia de testes |
 | [11-roadmap.md](./11-roadmap.md) | Roadmap v1 → v4 |
-
-## Roadmap do produto (macro)
-
-| Fase | Projeto | Status |
-|------|---------|--------|
-| **1** | Auditoria MCP (este repo) | Em design |
-| 2 | Pentest automatizado para APIs LLM | Futuro |
-| 3 | Agent Test Harness | Futuro |
-| 4 | MCP Tool Kit | Futuro |
